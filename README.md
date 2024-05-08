@@ -22,6 +22,12 @@ Using the LED Shot Tray is pretty simple and straightforward:
 
 ## Flashing The Firware
 
-The firmware can be flashed using PlatformIO. Please install the PlatformIO environment for VSCode and upload the firmware using the "Upload" button in the bottom toolbar. Once prompted, plug in the Digispark USB and wait for the upload to finish.
+The firmware can be flashed using PlatformIO. Please install the PlatformIO environment for VSCode.
+
+### If a bootloader is present
+If the Digispark USB has a bootloader installed, select the "Digispark" enviroment in the bottom toolbar and upload the firmware using the "Upload" button in the bottom toolbar. Once prompted, plug in the Digispark USB and wait for the upload to finish.
 
 As a tip: Use a USB extension cable to make the Digispark USB more accessible.
+
+## If no bootloader is present
+If the Digispark USB has no bootloader, flashing the firmware requires an ISP programmer. Connect the ISP programmer to the Digispark USB (find the pinout online) and configure the "Attiny85" environment in the `platformio.ini` file (See https://docs.platformio.org/en/stable/platforms/atmelavr.html) to use your ISP programmer. Next, select the "Attiny85" environment from the bottom toolbar, and upload the firmware by clicking the "Upload" button.
