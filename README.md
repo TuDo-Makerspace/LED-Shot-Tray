@@ -29,5 +29,5 @@ If the Digispark USB has a bootloader installed, select the "Digispark" envirome
 
 As a tip: Use a USB extension cable to make the Digispark USB more accessible.
 
-## If no bootloader is present
+### If no bootloader is present
 If the Digispark USB has no bootloader, flashing the firmware requires an ISP programmer. Connect the ISP programmer to the Digispark USB (find the pinout online) and configure the "Attiny85" environment in the `platformio.ini` file (See https://docs.platformio.org/en/stable/platforms/atmelavr.html) to use your ISP programmer. Next, select the "Attiny85" environment from the bottom toolbar, and upload the firmware by clicking the "Upload" button.
